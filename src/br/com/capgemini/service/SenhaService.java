@@ -6,22 +6,23 @@ public class SenhaService {
     public static boolean validaSenha(String senha) {
         if (senha.length() < 6) return false;
 
-        boolean achouNumero = false;
-        boolean achouMaiuscula = false;
-        boolean achouMinuscula = false;
-        boolean achouSimbolo = false;
+        boolean isNumber = false;
+        boolean isUpperCase = false;
+        boolean isLowerCase = false;
+        boolean isCaractere = false;
+
         for (char c : senha.toCharArray()) {
             if (c >= '0' && c <= '9') {
-                achouNumero = true;
+                isNumber = true;
             } else if (c >= 'A' && c <= 'Z') {
-                achouMaiuscula = true;
+                isUpperCase = true;
             } else if (c >= 'a' && c <= 'z') {
-                achouMinuscula = true;
+                isCaractere = true;
             } else {
-                achouSimbolo = true;
+                isCaractere = true;
             }
         }
-        return achouNumero && achouMaiuscula && achouMinuscula && achouSimbolo;
+        return isNumber && isUpperCase && isLowerCase && isCaractere;
     }
 
 }
