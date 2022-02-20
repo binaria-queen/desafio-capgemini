@@ -21,12 +21,17 @@ public class DesafioController {
             escadaService.criaEscada(tamanho);
         } else if (desafio == 2){
             SenhaService senhaService = new SenhaService();
-            System.out.println("Nome");
+            System.out.println("Digite o Nome");
             String nome = scanner.next();
-            System.out.println("Senha");
+            System.out.println("Digite a Senha");
             String senha = scanner.next();
 
             System.out.println(senhaService.validaSenha(senha));
+        } else if (desafio == 3)
+        {
+            System.out.println("Digite o texto a ser verificado");
+            String texto = scanner.next();
+
         }
 
     }

@@ -10,7 +10,6 @@ public class EscadaService {
         {
             for (j = 1; j<=tamanho; j++)
             {
-
                 if (tamanho-i < j)
                 {
                     System.out.print("*");
