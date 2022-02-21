@@ -1,8 +1,8 @@
-package br.com.capgemini.controller;
+package main.br.com.capgemini.controller;
 
-import br.com.capgemini.service.AnagramaService;
-import br.com.capgemini.service.EscadaService;
-import br.com.capgemini.service.SenhaService;
+import main.br.com.capgemini.service.AnagramaService;
+import main.br.com.capgemini.service.EscadaService;
+import main.br.com.capgemini.service.SenhaService;
 
 import java.util.Scanner;
 

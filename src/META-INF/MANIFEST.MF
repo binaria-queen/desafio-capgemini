@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: br.com.capgemini.controller.DesafioController
+Main-Class: main.br.com.capgemini.controller.DesafioController
 

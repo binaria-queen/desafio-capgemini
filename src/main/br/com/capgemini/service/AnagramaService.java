@@ -1,4 +1,4 @@
-package br.com.capgemini.service;
+package main.br.com.capgemini.service;
 
 public class AnagramaService {
 
