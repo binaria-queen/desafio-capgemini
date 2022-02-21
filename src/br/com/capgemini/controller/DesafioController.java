@@ -1,5 +1,6 @@
 package br.com.capgemini.controller;
 
+import br.com.capgemini.service.AnagramaService;
 import br.com.capgemini.service.EscadaService;
 import br.com.capgemini.service.SenhaService;
 
@@ -31,7 +32,8 @@ public class DesafioController {
         {
             System.out.println("Digite o texto a ser verificado");
             String texto = scanner.next();
-
+            AnagramaService anagramaService = new AnagramaService();
+            anagramaService.validaAnagrama(texto);
         }
 
     }
