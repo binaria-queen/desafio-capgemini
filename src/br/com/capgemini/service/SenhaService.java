@@ -4,7 +4,7 @@ package br.com.capgemini.service;
 public class SenhaService {
 
     public static boolean validaSenha(String senha) {
-        if (senha.length() >= 6) return false;
+        if (senha.length() >= 5) return false;
 
         boolean isNumber = false;
         boolean isUpperCase = false;
